@@ -1,0 +1,6 @@
+*// Force devices to download a file *//
+
+<FilesMatch "\.(?i:pdf)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>

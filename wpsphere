@@ -1,0 +1,15 @@
+Hi,
+
+Please try the following code change and let us know whether the settings are saving or not.
+
+Open ~/wp-content/plugins/wpshapere/main-settings.php on line number around 49 search for
+
+add_action('plugins_loaded', 'SaveSettings');
+
+and change it to
+
+add_action('admin_menu', 'SaveSettings');
+
+Best Regards,
+Aishwarya,
+AcmeeDesign Softwares and Solutions
